@@ -1,0 +1,339 @@
+body {
+  background-color: #000000;
+  font-family: 'lato', sans-serif;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+h1 {
+  font-family: 'lato', sans-serif;
+  color: #FFF;
+  text-align: start;
+  font-weight: 700;
+  margin-top: 80px;
+  margin-bottom: 70px;
+  font-size: 34px;
+
+
+
+
+
+}
+
+
+
+.contenedor {
+  background-color: white;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+  /* @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    
+  } */
+}
+
+.contenedor section {
+  padding: 20px;
+}
+
+
+.ImagenCripto {
+  max-width: 400px;
+  width: 80%;
+  margin: 100px auto 0 auto;
+  display: block;
+
+}
+
+/*Header*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.title span {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.lista {
+  margin: 0 auto;
+  flex: 2;
+}
+
+.lista ul>li>a {
+  text-decoration: none;
+  color: black;
+
+
+}
+
+.lista ul>li {
+  display: flex;
+
+}
+
+.lista ul {
+  display: flex;
+  gap: 10px;
+
+}
+
+
+/*////////////////////////////////////////////////////////FORMULARIO*/
+
+.Boton-Form {
+
+  display: flex;
+  padding: 14px;
+  margin-top: 29px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+
+}
+
+.input-form {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+label {
+  color: black;
+  display: block;
+  font-size: 15px;
+  font-weight: 200;
+  margin: 15px 0;
+}
+
+
+
+.Select-Form {
+  width: 100%;
+  font-size: 18px;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+
+}
+
+.select-container {
+  display: flex;
+  align-items: start;
+  width: 500px;
+  flex-direction: column;
+}
+
+.Formulario {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+/*////////////////////////////////////////ERROR*/
+
+.Error {
+  background-color: red;
+  color: white;
+  padding: 15px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+
+
+/*///////////////////////////////////////////DETALLE DEL LAS CRIPTO MONEDAS*/
+
+.Contenedor-Detalle {
+  color: white;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  margin-top: 30px;
+  padding: 20px;
+
+  .imagenDetalle {
+    display: block;
+    width: 150px;
+  }
+
+  .Precio {
+    font-size: 22px;
+  }
+
+  .detalle>p {
+    color: black;
+  }
+
+}
+
+
+
+
+.Contenedor-Detalle span {
+
+  font-weight: 900;
+
+}
+
+.contenedor-grafico {
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+
+/*tablas*/
+
+.dashboard-container {
+  padding: 24px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #1f2937;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+th {
+  background-color: #f9fafb;
+  padding: 12px 24px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6b7280;
+  border-bottom: 1px solid #000000;
+}
+
+td {
+  padding: 16px 24px;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+  border-bottom: 1px solid black;
+}
+
+tr:hover {
+  background-color: #f9fafb;
+}
+
+.crypto-name {
+  font-weight: 500;
+  color: #111827;
+}
+
+.positive {
+  color: #059669;
+}
+
+.negative {
+  color: #dc2626;
+}
+
+.chart-container {
+  width: 128px;
+  height: 64px;
+}
+
+.change-percent {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 16px;
+  }
+
+  td,
+  th {
+    padding: 12px 16px;
+  }
+}
+
+.botones {
+
+  margin: 0 auto;
+  flex-direction: row;
+  display: flex;
+}
+
+.botones>button {
+  display: flex;
+
+
+  cursor: pointer;
+  color: white;
+  background-color: rgb(47, 148, 244);
+
+}
+
+.contenedor-grafo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
